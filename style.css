@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:100vw;
+    height: 100svh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+}
+.first{
+  background-color: #72fbda;
+  color: #005a76;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+    width: 150px;
+    height: 50px;
+    background-color: #005a76;
+    color: white;
+    border: 0px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.third{
+    background-color: red;
+    position: relative;
+}
+.third:hover{
+  .color-code-1{
+    visibility: visible;
+  }
+}
+.four{
+    background-color: blue;
+    position: relative;
+}
+.four:hover{
+    .color-code-2{
+        visibility: visible;
+      }
+}
+.five{
+    background-color: green;
+    position: relative;
+}
+.five:hover{
+    .color-code-3{
+        visibility: visible;
+      }
+}
+.six{
+    background-color: yellow;
+    position: relative;
+}
+.six:hover{
+    .color-code-4{
+        visibility: visible;
+      }
+}
+.color-code-1,.color-code-2,.color-code-3,.color-code-4{
+    background-color: white;
+    color: black;
+    width: 135px;
+    height: 45px;
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    padding: 7px;
+    font-size: 24px;
+    visibility: hidden;
+}
+
+@media (max-width:600px) {
+    .first{
+        font-size: 10px;
+    }
+}
